@@ -1,10 +1,6 @@
 
-const path = require("path");
 const questionList = require('./lib/questionList');
 const TeamProfileGenerator = require('./lib/TeamProfileGenerator');
-
-const OUTPUT_DIR = path.resolve(__dirname, "output");
-const outputPath = path.join(OUTPUT_DIR, "team.html");
 
 const team = new TeamProfileGenerator(questionList);
 team.launch();
